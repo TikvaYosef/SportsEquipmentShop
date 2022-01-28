@@ -1,0 +1,40 @@
+﻿@using SportsEquipmentShop.Models;
+
+<h1 id="ShoeTitle">Sport Shoes</h1>
+<div>
+    <label for="Shoes">Sort By:</label>
+    <select name="Shoes" id="ShoesSelect">
+        <option value="A-z">A-z</option>
+        <option value="expensive-cheap">expensive-cheap</option>
+        <option value="cheap-expensive">cheap-expensive</option>
+    </select>
+</div>
+
+<a href="@Url.Action("OnSale","Shoes")"><button type="button">Shoes On Sale</button></a>
+<br />
+
+@foreach (Shoe item in Model)
+{
+    <section id="ShooesData">
+        <div>
+
+            <p class="ShoeTitle">
+                @item.Company
+
+                @item.Model
+            </p>
+
+            <h4 class="ShoeTitle">  @item.price $</h4>
+
+            <img id="ShoeImage" src=@item.image>
+
+
+        </div>
+    </section>
+
+}
+
+<div id="ManagerBtn">
+    <a href="@Url.Action("IdentificationWindow","Shoes")"><button type="button">Manager Page</button></a>
+
+</div>

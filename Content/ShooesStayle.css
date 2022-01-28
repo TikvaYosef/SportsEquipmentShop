@@ -1,0 +1,60 @@
+﻿body {
+    background-color: black;
+    color: white;
+}
+
+#ShooesData {
+    width: 300px;
+    display: inline-flex;
+    justify-content: center;
+    border: 2px solid white;
+    margin-top: 10px
+}
+
+#ShoeImage {
+    width: 200px;
+    margin-bottom: 10px;
+}
+
+    #ShoeImage:hover {
+        width: 250px;
+        transition: 0.5s;
+    }
+
+.ShoeTitle {
+    font-family: 'Mochiy Pop One', sans-serif;
+}
+
+#ShoeTitle {
+    text-align: center;
+    margin-bottom: 30px;
+    color: red;
+    font-family: 'Lobster', cursive;
+}
+
+#ManagerBtn {
+    margin-top: 10px;
+}
+
+table,th,td{
+    border: 2px solid red;
+    text-align:center;
+}
+#TableSection{
+ display:flex;
+ flex-direction:column;
+ justify-content:center;
+}
+#SectionIdentification {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.inputIdent {
+    margin-left:330px;
+    color: black;
+}
+.btn{
+    margin-top:15px;
+}

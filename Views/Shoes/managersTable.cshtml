@@ -1,0 +1,32 @@
+﻿@using SportsEquipmentShop.Models;
+
+
+<section id="TableSection">
+    <h1 id="ShoeTitle">All Shoes</h1>
+    <table>
+        <tr>
+            <th>Id</th>
+            <th>Shoe Type</th>
+            <th>Company</th>
+            <th>Model</th>
+            <th>Price</th>
+            <th>Amount</th>
+            <th>Image</th>
+        </tr>
+
+        @foreach (Shoe item in Model)
+        {
+
+            <tr>
+                <td>@item.Id</td>
+                <td>@item.ShoeType</td>
+                <td> @item.Company</td>
+                <td> @item.Model</td>
+                <td> @item.price $ </td>
+                <td>@item.Amount</td>
+                <td><img src=@item.image style="width:100px"></td>
+            </tr>
+
+        }
+    </table>
+    </section>

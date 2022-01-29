@@ -168,7 +168,14 @@
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
     <Content Include="Images\110161 Your Logo.png" />
+    <Content Include="Images\adidas.jpg" />
+    <Content Include="Images\basketball.jpg" />
+    <Content Include="Images\basketballgood.jpg" />
+    <Content Include="Images\billabong.png" />
+    <Content Include="Images\jorden.jpg" />
     <Content Include="Images\logo.png" />
+    <Content Include="Images\nike.png" />
+    <Content Include="Images\quicksilver.png" />
     <Content Include="Images\גיטהאב.png" />
     <Content Include="Images\לוגו טק.jpg" />
     <Content Include="Images\לוגו.jpg" />

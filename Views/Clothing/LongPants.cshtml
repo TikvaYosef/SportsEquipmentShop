@@ -8,7 +8,7 @@
         <option class="options" value="choose">choose</option>
         <option class="options" value="cheap-expensive">cheap-expensive</option>
     </select>
-    <button class="btnsort" type="button">Sort</button>
+    <button class="btnsort"  type="button">Sort</button>
 </div>
 
 
@@ -21,7 +21,7 @@
 
 @foreach (Clothing item in Model)
 {
-    if (item.t_shirt_ == false)
+    if (item.t_shirt_ == false && item.TypeOfClothes == "pants" )
     {
         <section id="ShooesData">
             <div>

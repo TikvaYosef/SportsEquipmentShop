@@ -10,6 +10,16 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Anton&family=Bebas+Neue&family=Lobster&family=Mochiy+Pop+One&family=Playfair+Display:ital,wght@0,500;0,700;0,800;0,900;1,700;1,900&display=swap" rel="stylesheet">
+    <style>
+        .mylogo {
+            width: 50px;
+           
+        
+        }
+        #logos {
+            margin-left: 350px;
+        }
+    </style>
 </head>
 <body>
     <div class="navbar navbar-inverse navbar-fixed-top">
@@ -20,23 +30,28 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                @Html.ActionLink("Sport Equipment", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
+                @Html.ActionLink("HOME PAGE", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
             </div>
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
                     <li>@Html.ActionLink("Shoes", "ShowShoes", "Shoes")</li>
-                    <li>@Html.ActionLink("About", "About", "Home")</li>
-                    <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
-                    <li>@Html.ActionLink("Managers", "ManagerShoes", "Managers")</li>
+                    <li>@Html.ActionLink("Shirts", "ShowAllTshirt", "Clothing")</li>
+                    <li>@Html.ActionLink("Pants", "ShowAllPants", "Clothing")</li>
+                    <li>@Html.ActionLink("Equipment", "ShowAllSportsEquipments", "SportsEquipment")</li>
+                    <li id="logos"><img src="~/Images/logo.png" class="mylogo"/> <img src="~/Images/לוגו טק.jpg" class="mylogo" /> <img src="~/Images/לוגו.jpg" class="mylogo"/></li>
                 </ul>
             </div>
         </div>
     </div>
     <div class="container body-content">
         @RenderBody()
+
+       
         <hr />
         <footer>
-            <p>&copy; @DateTime.Now.Year - My ASP.NET Application</p>
+           
+            <a href="https://github.com/TikvaYosef" target="_blank"><img class="mylogo" src="data:image/png;base64,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" /> </a>
+            <a href="https://www.linkedin.com/in/tikva-yosef-406bba223/" target="_blank"><img class="mylogo" src="data:image/png;base64,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" /> </a>
         </footer>
     </div>
 

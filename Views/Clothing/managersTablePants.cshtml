@@ -1,0 +1,47 @@
+﻿
+
+@using SportsEquipmentShop.Models;
+
+
+<section id="TableSection">
+    <h1 id="ShoeTitle">All Shoes</h1>
+    <table>
+        <tr>
+            <th>Id</th>
+            <th>Type Of Clothes</th>
+            <th>Gender</th>
+            <th>Company</th>
+            <th>Model</th>
+            <th>Price</th>
+            <th>Amount</th>
+            <th>t-shirt</th>
+            <th>Dry-Fit</th>
+            <th>Image</th>
+
+
+
+        </tr>
+
+        @foreach (Clothing item in Model)
+        {
+            if (item.TypeOfClothes == "pants")
+            {
+
+                <tr>
+                    <td>@item.Id</td>
+                    <td>@item.TypeOfClothes</td>
+                    <td> @item.gender</td>
+                    <td> @item.company</td>
+                    <td> @item.model</td>
+                    <td> @item.price $ </td>
+                    <td>@item.amount</td>
+                    <td>@item.t_shirt_</td>
+                    <td>@item.DryFit_</td>
+                    <td><img src=@item.image style="width:100px"></td>
+                </tr>
+            }
+
+        }
+    </table>
+</section>
+

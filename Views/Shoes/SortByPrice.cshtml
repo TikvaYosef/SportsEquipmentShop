@@ -1,8 +1,8 @@
-﻿@using SportsEquipmentShop.Models;
+﻿
 
+@using SportsEquipmentShop.Models;
 
 <h1 id="ShoeTitle">Sport Shoes</h1>
-
 <div class="SectionTshirts">
     <label for="Shoes">Sort By:</label>
     <select name="Shoes" id="shirtsSelect">
@@ -10,12 +10,11 @@
             <option value="expensive-cheap">expensive-cheap</option>*@
         <option value="true">cheap-expensive</option>
     </select>
-    <button type="button" onclick="location.href= '/Shoes/SortByPrice'">Sort</button>
+    <button type="button" onclick="location.href= '/Shoes/SortByPriceShoes'">Sort</button>
 </div>
 
 
 <button onclick="location.href= '/Shoes/OnSale'" type="button">Shoes On Sale</button>
-
 <br />
 
 @foreach (Shoe item in Model)
@@ -39,7 +38,4 @@
 
 }
 
-<div id="ManagerBtn">
-    <a href="@Url.Action("IdentificationWindow","Shoes")"><button type="button">Manager Page</button></a>
 
-</div>

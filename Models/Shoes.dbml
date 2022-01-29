@@ -11,4 +11,30 @@
       <Column Name="image" Type="System.String" DbType="VarChar(500)" CanBeNull="true" />
     </Type>
   </Table>
+  <Table Name="dbo.Clothing" Member="Clothings">
+    <Type Name="Clothing">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="TypeOfClothes" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="gender" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="company" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="model" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="price" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="amount" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="[t-shirt?]" Member="t_shirt_" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="[DryFit?]" Member="DryFit_" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="image" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.SportsEquipment" Member="SportsEquipments">
+    <Type Name="SportsEquipment">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="sport" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="ProductName" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="company" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="price" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="amount" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="TeamId" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="image" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+    </Type>
+  </Table>
 </Database>

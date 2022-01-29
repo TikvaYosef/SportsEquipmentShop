@@ -10,13 +10,19 @@ namespace SportsEquipmentShop.Controllers.API
     public class ShoesController : Controller
     {
         ShoesDataContext datacontext = new ShoesDataContext();
-        // GET: Shoes
+
+     
         public ActionResult ShowShoes()
         {
 
 
             return View(datacontext.Shoes);
 
+        }
+        public ActionResult SortByPrice()
+        {
+            List<Shoe> shoes = datacontext.Shoes.OrderBy(item => item.price).ToList();
+            return View(shoes);
         }
 
         public ActionResult managersTable()

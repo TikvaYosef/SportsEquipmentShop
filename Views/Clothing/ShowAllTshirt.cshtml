@@ -1,0 +1,51 @@
+﻿
+@using SportsEquipmentShop.Models;
+
+
+<h1 id="ShoeTitle">Sport shirts</h1>
+
+<div class="SectionTshirts">
+    <label for="shirts">Sort By:</label>
+    <select name="shirts" id="shirtsSelect">
+        @*<option value="A-z">A-z</option>
+            <option value="expensive-cheap">expensive-cheap</option>*@
+        <option value="true">cheap-expensive</option>
+    </select>
+    <button type="button" onclick="location.href= '/Clothing/SortByPrice'">Sort</button>
+</div>
+
+<a><label onclick="location.href= '/Clothing/LongTshirt'"><input type="checkbox" value="true"> Long Shirts</label></a>
+<a><label onclick="location.href= '/Clothing/TShirts'"><input type="checkbox" value="true">TShirts</label></a>
+
+<a><label onclick="location.href= '/Clothing/DryFitShirts'"><input type="checkbox" value="true"> DryFit Shirts</label></a>
+
+
+<br />
+
+@foreach (Clothing item in Model)
+{
+    if (item.TypeOfClothes == "shirt")
+    {
+        <section id="ShooesData">
+            <div>
+
+                <p class="ShoeTitle">
+                    @item.company
+
+                    @item.TypeOfClothes
+                </p>
+
+                <h4 class="ShoeTitle">  @item.price $</h4>
+
+                <img id="ShoeImage" src=@item.image>
+
+            </div>
+        </section>
+    }
+
+}
+
+<div id="ManagerBtn">
+    <a href="@Url.Action("IdentificationWindow","Clothing")"><button type="button">Manager Page</button></a>
+
+</div>

@@ -1,0 +1,48 @@
+﻿
+@using SportsEquipmentShop.Models;
+
+<h1 id="ShoeTitle">Sport pants</h1>
+
+<div class="SectionTshirts">
+    <label for="shirts">Sort By:</label>
+    <select name="shirts" id="shirtsSelect">
+        @*<option value="A-z">A-z</option>
+            <option value="expensive-cheap">expensive-cheap</option>*@
+        <option value="cheap-expensive">cheap-expensive</option>
+    </select>
+    <button type="button" onclick="location.href= '/Clothing/SortByPricePants'">Sort</button>
+</div>
+
+
+<a><label onclick="location.href= '/Clothing/LongPants'"><input type="checkbox" value="true"> Long Pants</label></a>
+<a><label onclick="location.href= '/Clothing/ShortPants'"><input type="checkbox" value="true"> Short Pants</label></a>
+<a><label onclick="location.href= '/Clothing/DryFitPants'"><input type="checkbox" value="true"> DryFit Pants</label></a>
+
+<br />
+
+
+
+@foreach (Clothing item in Model)
+{
+    if (item.TypeOfClothes == "pants")
+    {
+        <section id="ShooesData">
+            <div>
+
+                <p class="ShoeTitle">
+                    @item.company
+
+                    @item.TypeOfClothes
+                </p>
+
+                <h4 class="ShoeTitle">  @item.price $</h4>
+
+                <img id="ShoeImage" src=@item.image>
+
+            </div>
+        </section>
+
+
+    }
+}
+

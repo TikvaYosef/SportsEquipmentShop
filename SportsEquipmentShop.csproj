@@ -140,8 +140,12 @@
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
+    <Compile Include="Controllers\API\ClothingController.cs" />
+    <Compile Include="Controllers\API\ManageerEquipmentController.cs" />
+    <Compile Include="Controllers\API\ManagerClothingController.cs" />
     <Compile Include="Controllers\API\ManagerShoesController.cs" />
     <Compile Include="Controllers\API\ShoesController.cs" />
+    <Compile Include="Controllers\API\SportsEquipmentController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -163,6 +167,12 @@
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
+    <Content Include="Images\110161 Your Logo.png" />
+    <Content Include="Images\logo.png" />
+    <Content Include="Images\גיטהאב.png" />
+    <Content Include="Images\לוגו טק.jpg" />
+    <Content Include="Images\לוגו.jpg" />
+    <Content Include="Images\לינקדין.png" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Models\Shoes.dbml">
@@ -202,9 +212,33 @@
     <Content Include="Views\Shoes\managersTable.cshtml" />
     <Content Include="Views\Shoes\IdentificationWindow.cshtml" />
     <Content Include="Views\Shoes\OnSale.cshtml" />
+    <Content Include="Views\Clothing\ShowAllTshirt.cshtml" />
+    <Content Include="Views\Clothing\managersTableShirts.cshtml" />
+    <Content Include="Views\Clothing\IdentificationWindow.cshtml" />
+    <Content Include="Views\Clothing\LongTshirt.cshtml" />
+    <Content Include="Views\Clothing\DryFitShirts.cshtml" />
+    <Content Include="Views\Clothing\ShowAllPants.cshtml" />
+    <Content Include="Views\Clothing\managersTablePants.cshtml" />
+    <Content Include="Views\Clothing\IdentificationPants.cshtml" />
+    <Content Include="Views\Clothing\LongPants.cshtml" />
+    <Content Include="Views\Clothing\ShortPants.cshtml" />
+    <Content Include="Views\Clothing\DryFitPants.cshtml" />
+    <Content Include="Views\SportsEquipment\ShowAllSportsEquipments.cshtml" />
+    <Content Include="Views\SportsEquipment\IdentificationEquipment.cshtml" />
+    <Content Include="Views\SportsEquipment\managersTableEquipment.cshtml" />
+    <Content Include="Views\SportsEquipment\OnlyFootball.cshtml" />
+    <Content Include="Views\SportsEquipment\OnlyBasketball.cshtml" />
+    <Content Include="Views\Clothing\SortByPrice.cshtml" />
+    <Content Include="Views\Clothing\TShirts.cshtml" />
+    <Content Include="Views\Clothing\SortByPricePants.cshtml" />
+    <Content Include="Views\SportsEquipment\SortByPrice.cshtml" />
+    <Content Include="Views\Shoes\SortByPrice.cshtml" />
+    <Content Include="Views\Clothing\AllWomen.cshtml" />
+    <Content Include="Views\Clothing\Allmen.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Views\Pants\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />

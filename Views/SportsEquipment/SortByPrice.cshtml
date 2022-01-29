@@ -1,0 +1,45 @@
+﻿
+
+
+
+
+@using SportsEquipmentShop.Models;
+
+
+<h1 id="ShoeTitle">Sport Equipment</h1>
+
+<div class="SectionTshirts">
+    <label for="shirts">Sort By:</label>
+    <select name="shirts" id="shirtsSelect">
+        @*<option value="A-z">A-z</option>
+            <option value="expensive-cheap">expensive-cheap</option>*@
+        <option value="cheap-expensive">cheap-expensive</option>
+    </select>
+    <button type="button" onclick="location.href= '/SportsEquipment/SortByPrice'">Sort</button>
+</div>
+
+
+<a><label onclick="location.href= '/SportsEquipment/OnlyFootball'"><input id="Test" name="Test" type="checkbox" value="true"> Football </label></a>
+<a><label onclick="location.href= '/SportsEquipment/OnlyBasketball'"><input id="Test" name="Test" type="checkbox" value="true"> Basketball </label></a>
+<br />
+
+@foreach (SportsEquipment item in Model)
+{
+
+
+    <section id="ShooesData">
+        <div>
+
+            <p class="ShoeTitle">
+                @item.company
+
+                @item.ProductName
+            </p>
+
+            <h4 class="ShoeTitle">  @item.price $</h4>
+
+            <img id="ShoeImage" src=@item.image>
+
+        </div>
+    </section>
+}

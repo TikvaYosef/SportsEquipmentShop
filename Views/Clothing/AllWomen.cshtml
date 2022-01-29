@@ -1,0 +1,27 @@
+﻿@using SportsEquipmentShop.Models;
+
+<h1 id="ShoeTitle">women</h1>
+
+
+@foreach (Clothing item in Model)
+{
+    if (item.gender == "women")
+    {
+
+        <section id="ShooesData">
+            <div>
+
+                <p class="ShoeTitle">
+                    @item.company
+
+                    @item.TypeOfClothes
+                </p>
+
+                <h4 class="ShoeTitle">  @item.price $</h4>
+
+                <img id="ShoeImage" src=@item.image>
+
+            </div>
+        </section>
+    }
+}

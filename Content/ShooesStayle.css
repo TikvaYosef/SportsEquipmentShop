@@ -57,8 +57,20 @@ table,th,td{
 }
 .btn{
     margin-top:15px;
+    color:black;
 }
 .SectionTshirts{
   margin-left:300px;
+/*  color:black;*/
 }
 
+.btnsort{
+    color:black;
+}
+
+#shirtsSelect{
+    color:black;
+}
+.options{
+    color:black;
+}

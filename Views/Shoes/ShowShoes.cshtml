@@ -6,15 +6,14 @@
 <div class="SectionTshirts">
     <label for="Shoes">Sort By:</label>
     <select name="Shoes" id="shirtsSelect">
-        @*<option value="A-z">A-z</option>
-            <option value="expensive-cheap">expensive-cheap</option>*@
-        <option value="true">cheap-expensive</option>
+        <option class="options" value="choose">choose</option>
+        <option class="options" value="true">cheap-expensive</option>
     </select>
-    <button type="button" onclick="location.href= '/Shoes/SortByPrice'">Sort</button>
+    <button type="button" class="btnsort" onclick="location.href= '/Shoes/SortByPrice'">Sort</button>
 </div>
 
 
-<button onclick="location.href= '/Shoes/OnSale'" type="button">Shoes On Sale</button>
+<button onclick="location.href= '/Shoes/OnSale'" class="btnsort" type="button">Shoes On Sale</button>
 
 <br />
 

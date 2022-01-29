@@ -1,8 +1,4 @@
 ﻿
-
-
-
-
 @using SportsEquipmentShop.Models;
 
 
@@ -11,11 +7,10 @@
 <div class="SectionTshirts">
     <label for="shirts">Sort By:</label>
     <select name="shirts" id="shirtsSelect">
-        @*<option value="A-z">A-z</option>
-            <option value="expensive-cheap">expensive-cheap</option>*@
-        <option value="cheap-expensive">cheap-expensive</option>
+        <option class="options" value="choose">choose</option>
+        <option class="options" value="cheap-expensive">cheap-expensive</option>
     </select>
-    <button type="button" onclick="location.href= '/SportsEquipment/SortByPrice'">Sort</button>
+    <button type="button" class="btnsort" onclick="location.href= '/SportsEquipment/SortByPrice'">Sort</button>
 </div>
 
 

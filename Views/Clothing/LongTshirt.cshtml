@@ -5,11 +5,10 @@
 <div class="SectionTshirts">
     <label for="shirts">Sort By:</label>
     <select name="shirts" id="shirtsSelect">
-        @*<option value="A-z">A-z</option>
-            <option value="expensive-cheap">expensive-cheap</option>*@
-        <option value="true">cheap-expensive</option>
+        <option class="options" value="choose">choose</option>
+        <option class="options" value="true">cheap-expensive</option>
     </select>
-    <button type="button" onclick="location.href= '/Clothing/SortByPrice'">Sort</button>
+    <button type="button" class="btnsort" onclick="location.href= '/Clothing/SortByPrice'">Sort</button>
 </div>
 
 <a><label onclick="location.href= '/Clothing/LongTshirt'"><input type="checkbox" value="true"> Long Shirts</label></a>
